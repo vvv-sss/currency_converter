@@ -1,0 +1,24 @@
+<form>
+    <app-input-block 
+        className="currency-block-1"
+        (inputValueForForm)="getInputValue1($event)"
+        (selectValueForForm)="getSelectValue1($event)"
+        [inputValue]="inputValue1"
+        [selectValue]="selectValue1"
+        (input)="doExchange1()"
+    >
+    </app-input-block>
+    <button (click)="toggleSelectValue()">
+        <img src="../../../assets/exchange_icon.png" alt="Money exchange icon" />
+    </button>
+    <app-input-block 
+        className="currency-block-2"
+        (inputValueForForm)="getInputValue2($event)"
+        (selectValueForForm)="getSelectValue2($event)"
+        [inputValue]="inputValue2"
+        [selectValue]="selectValue2"
+        (click)="setExchange()"
+        (input)="doExchange2()"
+    >
+    </app-input-block>
+</form>

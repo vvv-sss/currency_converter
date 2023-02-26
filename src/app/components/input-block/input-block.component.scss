@@ -1,0 +1,39 @@
+.currency-block-1,
+.currency-block-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 0.5rem;
+    border-bottom: 1px solid hsl(0, 0%, 50%);
+
+    input {
+        width: 45%;
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    select {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-family: inherit;
+        cursor: pointer;
+    
+        option {
+            font-family: inherit;
+        }
+    }
+}

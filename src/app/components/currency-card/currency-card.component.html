@@ -1,0 +1,11 @@
+<div [class]="'currency-card ' + className">
+    <p>{{ currencyCode | uppercase }}</p>
+    <p>{{ currencyAmount }}</p>
+    <div class="currency-card__name-container">
+        <h3>{{ currencyName }}</h3>
+        <img 
+            [src]="currencyIconSrcBase + currencyIconSrcEndpoint" 
+            [alt]="'Icon with ' + currencyName + ' sign'"
+        />
+    </div>
+</div>

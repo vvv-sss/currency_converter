@@ -1,0 +1,70 @@
+.currency-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 17rem;
+    height: 12rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: hsla(0, 0%, 0%, 0.24) 0px 3px 8px;
+            box-shadow: hsla(0, 0%, 0%, 0.24) 0px 3px 8px;
+    background-color: hsl(269, 61%, 92%);
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    & * {
+        pointer-events: none;
+    }
+
+    p:nth-of-type(1) {
+        font-weight: 700;
+    }
+
+    p:nth-of-type(2) {
+        font-size: 2rem;
+    }
+
+    .currency-card__name-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+                justify-content: flex-end;
+
+        img {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+
+    &:hover {
+        background-color: hsl(268, 67%, 82%);
+    }
+}
+
+.base {
+    background-color: hsl(196, 87%, 94%);
+
+    &:hover {
+        background-color: hsl(196, 87%, 84%);
+    }
+}

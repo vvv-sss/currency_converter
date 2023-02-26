@@ -1,0 +1,24 @@
+<div [class]="className">
+    <input 
+        type="number" 
+        min="0" 
+        placeholder="1.0000"
+        [(ngModel)]="inputValue"
+        (input)="sendInputValue()"
+        [value]="inputValue"
+    />
+    <select 
+        [(ngModel)]="selectValue" 
+        (click)="sendSelectValue()"
+        [value]="selectValue"
+    >
+        <option value="">Select the currency</option>
+        <option 
+            *ngFor="let currency of currencyList"
+            [value]="currency.code"
+        >
+            {{ currency.name }}
+            {{ currency.code | uppercase }}
+        </option>
+    </select>
+</div>

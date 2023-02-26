@@ -1,0 +1,34 @@
+main {
+    width: 100%;
+    max-width: 35rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    -webkit-box-shadow: hsla(0, 0%, 0%, 0.24) 0px 3px 8px;
+            box-shadow: hsla(0, 0%, 0%, 0.24) 0px 3px 8px;
+
+    h2 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    p {
+        color: hsla(0, 0, 0, 75%);
+        font-size: 0.85rem;
+        font-style: italic;
+
+        img {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            width: 3rem;
+            height: 3rem;
+            margin-bottom: -0.5rem;
+        }
+    }
+
+    a {
+        color: hsl(0, 0%, 0%);
+    }
+}

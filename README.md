@@ -1,27 +1,26 @@
-# CurrencyConverter
+# Currency Converter App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
+This is an application designed to provide users with real-time currency exchange rates for various currencies. This app makes use of the  
+[Free Currency Rates API](https://github.com/fawazahmed0/currency-api#readme) , which provides reliable and up-to-date exchange rate information for a wide range of currencies. 
+The Currency Exchange App is user-friendly and easy to navigate, allowing users to quickly search for the desired currency exchange rate. Users can set their base currency in the header simply clicking on it and the app will display the current exchange rate for the available currency pairs.
+The app also features a currency converter, allowing users to quickly convert one currency to another. Users simply need to input the amount they wish to convert, select the base currency and the target currency, and the app will display the converted amount. Additionally user can toggle the currencies by pressing the rotating button between them.
+The Currency Exchange App is a powerful and reliable tool for anyone who needs access to real-time currency exchange rates and information. With its user-friendly interface and robust features, it is an essential tool for anyone who travels internationally, conducts business across borders, or simply wants to stay informed about the latest currency trends.
 
-## Development server
+## Preview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![](preview.jpg)
 
-## Code scaffolding
+##  Links
+Try it now! [Currency Convertor](https://vvv-sss.github.io/currency_converter/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##  Built with
 
-## Build
+- Angular
+- Typescript
+- HTML5
+- SCSS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+##  Author
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Volodymyr Serbulenko
+- E-mail: serbulenko1volodymyr@gmail.com

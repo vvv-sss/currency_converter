@@ -1,0 +1,57 @@
+form {
+    display: -ms-grid;
+    display: grid;
+    margin: 4rem auto;
+    margin-top: 2rem;
+
+    button {
+        width: 4rem;
+        padding: 0;
+        margin: 1rem auto;
+        margin-bottom: 0rem;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        img {
+            width: 4rem;
+            height: 4rem;
+            -webkit-animation: rotate 4s ease-in-out 1s infinite;
+                    animation: rotate 4s ease-in-out 1s infinite;
+            
+            &:hover {
+                -webkit-animation: none;
+                        animation: none;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes rotate {
+    0%{
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+    }
+    100%{
+        -webkit-transform: rotateY(360deg);
+                transform: rotateY(360deg);
+    }
+}
+@keyframes rotate {
+    0%{
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+    }
+    100%{
+        -webkit-transform: rotateY(360deg);
+                transform: rotateY(360deg);
+    }
+}

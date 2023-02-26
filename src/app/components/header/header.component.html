@@ -1,0 +1,21 @@
+<header>
+    <div class="currency-card-container">
+        <div class="exchange-rate-msg-container">
+            <h2>
+                {{ exchangeRateTitle }}
+                {{ baseCurrencyName }}
+            </h2>
+            <span>Click on card to change the base currency</span>
+        </div>
+        <app-currency-card 
+            *ngFor="let card of cardList"
+            [className]="card.class"
+            [currencyCode]="card.code"
+            [currencyName]="card.name"
+            [currencyAmount]="setCurrencyRate(card.code)"
+            [currencyIconSrcEndpoint]="card.iconSrcEndpoint"
+            (click)="setBaseCurrency(card.code, card.name, $event)"
+        >
+        </app-currency-card> 
+    </div>
+</header>
